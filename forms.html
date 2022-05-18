@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formular</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                font-family: 'Lato', sans-serif;
+                line-height: 1.5em;
+                color: #2e4057;
+            }
+
+            main {
+                padding: 20px;
+                margin: auto;
+                max-width: 650px;
+            }
+            header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: cadetblue;
+                width: 100%;
+                text-align: center;
+            }
+            form {
+                display: block;
+                margin: 100px auto;
+            }
+            label, button {
+                display: inline-block;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Forms</h1>
+            </header>
+        <form action="https://formspree.io/f/mqknwjzr" method="post">
+            <h2>Fügen Sie bitte den Form unten</h2>
+            <label>
+                Vorname:
+                <input type="text" name="vorname" placeholder="Vorname eingeben" required />
+            </label>
+            <br />
+            <label>
+                Alter:
+                <input type="number" name="alter" placeholder="Alter eingeben" required />
+            </label>
+            <br />
+            <label>
+                Front-end  
+                <input type="radio" name="f-end"/>
+                Back-end 
+                <input type="radio" name="b-end"/>
+                Full-stack 
+                <input type="radio" name="f-stack"/>
+            </label>
+            <br>
+            <label>
+                Halte mich auf dem Laufenden: 
+                <input name="checkbox" type="checkbox">
+            </label>
+            <br>
+            <label>
+                Deine Nachricht:
+                <textarea placeholder="An uns" name="nachricht" required></textarea>
+            </label>
+            <br />
+            <label>
+                Dein Lieblingstier:
+                <select name="lieblingstier" required>
+                    <option value="Katze">Katze</option>
+                    <option value="Hund">Hund</option>
+                    <option value="Tiger">Tiger</option>
+                    <option value="Bär" selected>Bär</option>
+                </select>
+            </label>
+            <br />
+            <label for="browser">Choose your browser from the list:
+                <input list="browsers" name="browser" id="browser">
+
+                <datalist id="browsers">
+                    <option value="Edge">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist>
+            </label>
+            <br>
+            <label for="cars">Choose a car:
+              <select  name="cars" id="cars">
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+              </select>
+            </label>
+            <br>
+            <label>
+                Deine Lieblingsfarbe
+                <input type="color" name="lieblingsfarbe">
+            </label>
+            <br>
+            <label>
+                E-Mail:
+                <input type="email" name="email">
+            </label>
+            <br>
+            <label>
+                Password:
+                <input type="password" name="password">
+            </label>
+            <br>
+            <label>
+                Datum:
+                <input type="date" name="Datum">
+            </label>
+            <br>
+            <label>
+                Wählen Sie eine Datei aus:
+                <input type="file" name="file">
+            </label>
+            <br>
+            <label>
+                Fügen Sie ein Bild hinzu:
+                <input type="image" name="bild">
+            </label>
+            <br>
+            <button type="submit">Absenden</button>
+            <button type="reset">Resetten</button>
+        </form>
+        </main>
+    </body>
+</html>
